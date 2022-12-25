@@ -22,5 +22,29 @@ bool IskPeriodic(const string& arr, const int k)
     {
         return false;
     }
+    int j = 0;
+    int g = 0;
     
+    for (int i = 0; i < arr.size(); i = i + k)
+    {
+        j = i;
+    while (j < a.size())
+    {
+        if (arr[j] == a[j])
+        {
+            j++;
+            continue;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    g++;
+    }
+    if (arr.size() / k == g)
+    {
+        return true;
+    }
+    return false;
 }
