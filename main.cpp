@@ -48,3 +48,18 @@ bool IskPeriodic(const string& arr, const int k)
     }
     return false;
 }
+int main()
+{
+    string arr = "wowwowwow";
+    int k = 3;
+    
+    if (IskPeriodic(arr, k))
+    {
+        cout << "Строка кратна числу " << k << "!" << endl;
+    }
+    else
+    {
+        cout << "Строка не кратна числу " << k << "!" << endl;
+    }
+    return 0;
+}
